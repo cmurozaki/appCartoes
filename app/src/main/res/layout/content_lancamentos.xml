@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutContentLancamentos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnConfirmarLancamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="#FFFFFF"
+        app:srcCompat="@drawable/baseline_check_circle_outline_white_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnExcluirLancamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@android:color/holo_red_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <EditText
+        android:id="@+id/edtDataUltimaParcela"
+        android:layout_width="128dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="dd/mm/aaaa"
+        android:inputType="date"
+        android:background="@drawable/my_bg"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <me.abhinay.input.CurrencyEditText
+        android:id="@+id/edtValorPorParcela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="R$ 999.999,99"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        android:background="@drawable/my_bg"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <ImageButton
+        android:id="@+id/ibtnCalendarioPrimParc"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        app:layout_constraintStart_toEndOf="@+id/edtDataPrimeiraParcela"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:srcCompat="@android:drawable/ic_menu_day" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/str_data_compra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtDataCompra"
+        android:layout_width="128dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="dd/mm/aaaa"
+        android:inputType="date"
+        android:background="@drawable/my_bg"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/str_desc_compra"
+        app:layout_constraintStart_toStartOf="@+id/edtDataCompra"
+        app:layout_constraintTop_toBottomOf="@+id/edtDataCompra" />
+
+    <EditText
+        android:id="@+id/edtDescricaoCompra"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="Ex.: Farmácia, Mercado"
+        android:inputType="textPersonName|textCapWords|textCapSentences"
+        android:maxLength="40"
+        android:background="@drawable/my_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/str_valor_total_compra"
+        app:layout_constraintStart_toStartOf="@+id/edtDescricaoCompra"
+        app:layout_constraintTop_toBottomOf="@+id/edtDescricaoCompra" />
+
+    <ImageButton
+        android:id="@+id/ibtnCalendario"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        app:layout_constraintStart_toEndOf="@+id/edtDataCompra"
+        app:layout_constraintTop_toTopOf="@+id/edtDataCompra"
+        app:srcCompat="@android:drawable/ic_menu_day" />
+
+    <me.abhinay.input.CurrencyEditText
+        android:id="@+id/edtValorTotalCompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="R$ 999.999,99"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:background="@drawable/my_bg"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Nr. Parcelas"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/edtDescricaoCompra" />
+
+    <EditText
+        android:id="@+id/edtNumParcelas"
+        android:layout_width="75dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:background="@drawable/my_bg"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Melhor Dia: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtDiaMelhorCompra"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:background="@drawable/my_bg"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Data 1.a Parc."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtValorTotalCompra" />
+
+    <EditText
+        android:id="@+id/edtDataPrimeiraParcela"
+        android:layout_width="128dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="dd/mm/aaaa"
+        android:inputType="date"
+        android:background="@drawable/my_bg"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="30dp"
+        android:text="Calcular"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        app:layout_constraintStart_toEndOf="@+id/ibtnCalendarioPrimParc"
+        app:layout_constraintTop_toBottomOf="@+id/edtNumParcelas" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/str_valor_por_parcela"
+        app:layout_constraintStart_toStartOf="@+id/edtDataPrimeiraParcela"
+        app:layout_constraintTop_toBottomOf="@+id/edtDataPrimeiraParcela" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:text="@string/str_data_ultima_parcela"
+        app:layout_constraintStart_toStartOf="@+id/btnCalcular"
+        app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:text="Dia Venc.:"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/edtDiaVenc"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:background="@drawable/my_bg"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

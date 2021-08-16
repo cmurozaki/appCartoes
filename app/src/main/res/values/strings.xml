@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Controle de Cartões</string>
+    <string name="action_settings">Configurações</string>
+    <string name="action_close">Fechar Aplicativo</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="title_activity_cad_cartao">Controle de Cartões de Crédito</string>
+    <string name="msg_conexao_sucesso">Conexão criada com sucesso!</string>
+    <string name="msg_erro_conexao">Erro de conexão</string>
+    <string name="msg_ok">OK</string>
+    <string name="lbl_nome_cartao">Nome do Cartão (Apelido)</string>
+    <string name="lbl_num_cartao">Número do Cartão</string>
+    <string name="lbl_vencimento">Vencimento</string>
+    <string name="lbl_cvv">CVV</string>
+    <string name="lbl_senha">Senha</string>
+    <string name="lbl_melhor_dia">Melhor Dia de Compra</string>
+    <string name="lbl_dia_vencimento">Dia Vencimento</string>
+    <string name="hint_mm_aa">MM/AA</string>
+    <string name="str_nome_cartao">NOME DO CARTÃO</string>
+    <string name="str_melhor_dia">MELHOR DIA PARA COMPRA (ENTRE 1 E 31)</string>
+    <string name="str_dia_venc">DIA DE VENCIMENTO (ENTRE 1 E 31)</string>
+    <string name="str_lancamentos">Lançamentos</string>"
+    <string name="msg_registro_gravado_sucesso">Registro gravado com sucesso.</string>
+    <string name="hint_4_digitos">(4 dígitos)</string>
+    <string name="msg_opcao_indisponivel">Opção indisponível</string>
+    <string name="msg_copiado_area_transf">Copiado para área de transferência</string>
+    <string name="str_data_compra">Data da Compra</string>
+    <string name="str_desc_compra">Descrição da Compra</string>
+    <string name="str_valor_total_compra">Valor Total da Compra</string>
+    <string name="msg_parcelas_1_a_99">Informar parcelas entre 1 e 99</string>
+    <string name="msg_informe_num_parcelas">Informe o número de parcelas</string>
+    <string name="msg_informe_data_compra">Informe data da compra</string>
+    <string name="msg_valor_compra">Informe o valor da compra</string>
+    <string name="msg_descricao_compra">Informe a descrição da compra</string>
+    <string name="msg_valor_compra_maior_zero">Informe um valor de compra superior a 0,00</string>
+    <string name="msg_informe_data_primeira_parcela">Informe a data da primeira parcela</string>
+    <string name="str_valor_por_parcela">Valor por Parcela</string>
+    <string name="str_data_ultima_parcela">Última Parcela</string>
+    <string name="title_activity_lista_lancamentos">Lançamentos - Última Parcela</string>
+    <string name="msg_senha_invalida">Senha inválida !</string>
+    <string name="msg_arq_config_sucesso">Arquivo de configuracao com sucesso</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="msg_conexao_db_lanc_sucesso">Conexão de lançamentos com sucesso</string>
+    <string name="msg_lancamento_sucesso">Lançamento realizado com sucesso.</string>
+    <string name="msg_num_cartao_obriga">NÚMERO DO CARTÃO - Campo Obrigatório</string>
+    <string name="msg_lancamento_excluidos_sucesso">Lançamentos excluídos com sucesso</string>
+    <string name="msg_alteracao_lanc_sucesso">Alteração realizada com sucesso.</string>
+    <string name="msg_confirmacao_exc_lanc">Confirma a EXCLUSÃO deste lançamento ?</string>
+    <string name="menu_filtrar_data_ult_parcela">Escolher Data para Filtro</string>
+    <string name="menu_executar_filtro">Executar Filtro</string>
+</resources>

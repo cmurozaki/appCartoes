@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.acessoscartoes.MainActivity">
+    <item
+        android:id="@+id/action_filtrar"
+        android:orderInCategory="100"
+        android:title="@string/menu_filtrar_data_ult_parcela"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_executar_filtro"
+        android:orderInCategory="100"
+        android:title="@string/menu_executar_filtro"
+        app:showAsAction="never" />
+
+</menu>
